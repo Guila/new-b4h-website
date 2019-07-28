@@ -75,58 +75,153 @@
       </div>
     </div>  
 
-    <!-- Quote Container -->
-    <div class="container quote">
-      <h1 class="display-4">Free No Obligation Quote</h1>
-      <p>
-        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-          One Way
-        </a>
-        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-          Return
-        </a>
-      </p>
-      <div class="collapse" id="collapseExample">
-        <div class="card card-body">
-          <form>
-            <div class="form-row align-items-center">
+    <!-- Quotes -->
+    <div class="quote-container p-5">
+      <h3 class="display-4 text-center">Get your free no obligation quote</h3>
+      <h3 class="display-5 text-center">Just provide your trip details, and any special requests</h3>
+      <h3 class="display-6 text-center"> we'll do the rest</h3>
 
-              <!-- Pick up location --> 
-              <div class="col-auto">
-                <label class="sr-only" for="inlineFormInputGroup">Pick up Location</label>
-                <div class="input-group mb-2">
-                  <div class="input-group-prepend">
-                    <div class="input-group-text">
-                      <img src="../images/svg/location.svg" alt="Map Icon">
+      <div id="accordion">
+
+        <div class="card">
+          <div class="card-header">
+            <a class="card-link" data-toggle="collapse" href="#collapseOne">
+              One Way
+            </a>
+          </div>
+          <div id="collapseOne" class="collapse show" data-parent="#accordion">
+            <div class="card-body">
+              <!-- Quote Form -->
+              <form>
+                <div class="form-row align-items-center">
+
+                  <!-- Pick up location --> 
+                  <div class="col-auto">
+                    <label class="sr-only" for="inlineFormInputGroup">Pick up Location</label>
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">
+                          <img src="../images/svg/location.svg" alt="Map Icon">
+                        </div>
+                      </div>
+                      <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Pick-up location">
                     </div>
                   </div>
-                  <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Pick-up location">
-                </div>
-              </div>
-              
-              <!-- Destination -->
-              <div class="col-auto">
-                <label class="sr-only" for="inlineFormInputGroup">Destination</label>
-                <div class="input-group mb-2">
-                  <div class="input-group-prepend">
-                    <div class="input-group-text">
-                      <img src="../images/svg/location.svg" alt="Map Icon">
+                  
+                  <!-- Destination -->
+                  <div class="col-auto">
+                    <label class="sr-only" for="inlineFormInputGroup">Destination</label>
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">
+                          <img src="../images/svg/location.svg" alt="Map Icon">
+                        </div>
+                      </div>
+                      <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Destination">
                     </div>
                   </div>
-                  <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Destination">
                 </div>
-              </div>
+                <div class="form-row align-items-center">
+                  <!-- Pick up time -->
+                  <div class="col-auto">
+                    <label class="sr-only" for="inlineFormInputGroup">Pick Up time</label>
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">
+                          <img src="../images/svg/clock.svg" alt="Map Icon">
+                        </div>
+                      </div>
+                      <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Pick Up time">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row align-items-center">
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                  </div>
+                </div>
+              </form>
+
             </div>
-            <div class="form-row align-items-center">
-              <div class="col-auto">
-                <button type="submit" class="btn btn-primary mb-2">Submit</button>
-              </div>
-            </div>
-          </form>
+          </div>
         </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+              Return
+            </a>
+          </div>
+          <div id="collapseTwo" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              <!-- Quote Form -->
+              <form>
+                <div class="form-row align-items-center">
+
+                  <!-- Pick up location --> 
+                  <div class="col-auto">
+                    <label class="sr-only" for="inlineFormInputGroup">Pick up Location</label>
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">
+                          <img src="../images/svg/location.svg" alt="Map Icon">
+                        </div>
+                      </div>
+                      <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Pick-up location">
+                    </div>
+                  </div>
+                  
+                  <!-- Destination -->
+                  <div class="col-auto">
+                    <label class="sr-only" for="inlineFormInputGroup">Destination</label>
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">
+                          <img src="../images/svg/location.svg" alt="Map Icon">
+                        </div>
+                      </div>
+                      <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Destination">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row align-items-center">
+                  <!-- Pick up time -->
+                  <div class="col-auto">
+                    <label class="sr-only" for="inlineFormInputGroup">Pick Up time</label>
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">
+                          <img src="../images/svg/clock.svg" alt="Map Icon">
+                        </div>
+                      </div>
+                      <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Pick Up time">
+                    </div>
+                  </div>
+                  <!-- Return time -->
+                  <div class="col-auto">
+                    <label class="sr-only" for="inlineFormInputGroup">Return time</label>
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">
+                          <img src="../images/svg/clock.svg" alt="Map Icon">
+                        </div>
+                      </div>
+                      <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Return time">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row align-items-center">
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
- 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
